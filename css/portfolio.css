@@ -1,0 +1,627 @@
+:root{
+  --color : #16FF00 ;
+  --font-family: 'Orbitron', sans-serif;
+  --back-ground:linear-gradient(0.5turn, #000000, #191A19);
+}
+/*:root.light {
+  --color : linear-gradient(0.5turn, #000000, #191A19) ;
+  --font-family: 'Orbitron', sans-serif;
+  --back-ground:rgb(240, 240, 240);
+}*/
+html {
+padding: 0px;
+margin: 0px;
+background:#191A19 ;
+overflow-clip-box: hidden;
+
+}
+* {
+  box-sizing: border-box;
+}
+body {
+padding: 0px;
+margin: 0px;
+width: 100%;
+overflow-x: hidden;
+overflow-clip-box: hidden;
+font-family: var(--font-family);
+}
+#header-nav {
+background: var(--back-ground);
+border-radius: 0px;
+border: 1px solid #191A19;
+border-bottom: 2px solid var(--color);
+margin-bottom: 0px;
+overflow-x: hidden;
+}
+.navbar  {
+position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+.container{
+width:80%;
+overflow-x: hidden;
+}
+.navbar-header{
+  display: flex;
+}
+.Issam-name{
+  width: 90px;
+  height: 90px;
+}
+.theme {
+  width:5em;
+  height: 2em;
+ margin-top: 2.5em;
+ border: 2px dotted var(--color);
+
+ background-color: transparent;
+ color: var(--color);
+}
+button.navbar-toggle {
+position: absolute;
+top: 10px;
+right: 10px;
+background-color: #191A19;
+margin-right: 4rem;
+border: 1px solid var(--color) !important ;
+}
+button.navbar-toggle:active {
+background-color: #191A19;
+}
+span.icon-bar {
+  background-color: var(--color) !important;
+}
+#collapsable-nav{
+border-color: var(--color);
+}
+#nav-list li a {
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--color);
+  margin: 1.2em;
+  text-align: center;
+}
+#nav-list li a:hover {
+  color: var(--color);
+  text-decoration: none;
+  box-shadow: 10px 8px var(--color);
+  border: 2px solid var(--color);
+  background-color: var(--back-ground);
+  }
+#main-content{
+  background-color: #191A19 ;
+  padding: 3rem;
+   align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+overflow-clip-box: hidden;
+
+}
+.reception {
+  min-height: 100vh;
+  display: flex;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 11rem;
+  overflow-clip-box: hidden;
+
+}
+@keyframes float {
+  0% {
+    
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+#presentation {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  align-items: center;
+  justify-content: center;
+  line-height:auto;
+  font-family: var(--font-family);
+  color: var(--color);
+ overflow-clip-box: hidden;
+  overflow: hidden;
+}
+.presentation-typing {
+  top:50%;
+  overflow: hidden;
+  overflow-clip-box: hidden;
+
+}
+.text.one {
+font-size:5rem ;
+font-weight: bold;
+margin-bottom: 1.5rem;
+margin-right: 1.5rem;
+}
+.two{
+font-size:3rem  ;
+overflow: hidden;
+width: 130%;
+}
+.text-style {
+color: blue !important; 
+font-weight: bold;
+box-shadow: 0 0 15px 10px var(--color);
+}
+
+@media (min-width: 1200px){
+.My-projects{
+display: flex;
+}
+.project1{
+width: 45%;
+}
+.project2{
+width: 45%;
+}
+figcaption {
+ font-size: 1.6rem !important;
+ line-height: 1.7em;
+}
+
+
+}
+
+
+
+
+@media (min-width: 950px) and (max-width: 1199px) {
+.My-projects{
+display: flex;
+
+}
+.project1{
+width: 44%;
+}
+.project2{
+width: 44%;
+}
+.paragraph-contact{
+  padding:10px !important;
+}
+}
+
+
+@media (min-width: 768px)and (max-width: 949px) {
+
+
+  .text.one{
+    font-size: 2rem;
+  }
+    .two{
+    font-size: 15px;
+  }
+   img.Issam{
+      height: 60%;
+      width: 60%;
+      border-radius: 50%;
+    }
+    .paragraph section:nth-child(1){
+  height:60vh;
+}
+.paragraph section:nth-child(2){
+font-size: 1.5rem !important;
+height: 70%;
+align-items: center;
+text-align: center;
+justify-content: center;
+margin-top:0px !important;
+flex-wrap: wrap;
+}
+.project1{
+width: 100% ;
+}
+.project2{
+width: 100% ;
+}
+.contact-me {
+padding-left: 4rem !important;
+padding-right: 4rem !important;
+}
+.paragraph-contact{
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+  font-size: 1.8em !important;
+}
+.container {
+width: 100%;
+}
+
+}
+@media  (max-width: 767px) {
+
+
+  .text.one{
+    font-size: 2rem;
+  }
+    .two{
+    font-size: 15px;
+  }
+   img.Issam{
+      height: 60%;
+      width: 80sec%;
+      border-radius: 50%;
+    }
+    .paragraph section:nth-child(1){
+  height:60vh;
+}
+.paragraph section:nth-child(2){
+font-size: 1.4rem !important;
+height: 70%;
+align-items: center;
+text-align: center;
+justify-content: center;
+margin-top:0px !important;
+flex-wrap: wrap;
+padding: 0rem !important;
+}
+.paragraph {
+padding: 0rem !important;
+}
+#quotes {
+float: right ;
+}
+#projects{
+margin-top:40rem !important ;
+}
+.contact-me {
+padding-left: 4rem !important;
+padding-right: 4rem !important;
+}
+.paragraph-contact{
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+  font-size: 1em !important;
+}
+
+}
+
+  #about {
+  width: 100%;
+  height: 100vh;
+  background-color:transparent;
+  margin-top: 12rem;
+  color: var(--color);
+  font-family: var(--font-family);
+  flex-wrap: wrap;
+}
+h1{
+margin-bottom: 12rem;
+}
+.paragraph {
+  padding: 3rem;
+}
+.paragraph section:nth-child(2){
+  height:80vh;
+}
+img.Issam {
+  border: 2px solid var(--color);
+  padding: 0px;
+  height: 80%;
+ transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+}
+.paragraph section:nth-child(2){
+  line-height: 2em;
+margin-top: 8rem;
+font-size: 1.3em;
+font-weight:300;
+padding: 3rem;
+text-align: justify;
+}
+h3 {
+font-weight: 600;
+margin-bottom: 2em;
+margin-left: 5%;
+}
+.nom {
+font-style: italic;
+}
+#projects {
+  width: 100%;
+  height: 100vh;
+  background-color:transparent;
+  margin-top: 30rem;
+  color: var(--color);
+  font-family: var(--font-family);
+  flex-wrap: wrap;
+}
+h1.projects{
+margin-bottom: 15rem;
+}
+.My-projects {
+  width: 100%;
+}
+.My-projects div {
+ color: white !important;
+  height: auto;
+  margin: 1.5rem;
+}
+.My-projects div img{
+height: 100%;
+width: 100%;
+border:1px solid var(--color); 
+display: flex;
+}
+.link ,.live {
+  border: 1px solid var(--color);
+  color: var(--color);
+}
+.link:hover ,.live:hover {
+  color: var(--color);
+  text-decoration: none;
+  box-shadow: 5px 4px var(--color);
+  border: 1px solid var(--color);
+  background-color: var(--back-ground);
+  }
+.live {
+  margin-top: 2rem;
+}
+.link {
+  margin-top: 1.5rem;
+}
+figcaption {
+ border: 1px solid white;
+ padding:5px;
+ font-size: 1.2rem;
+ line-height: 1.6em;
+}
+figure a:hover {
+text-decoration:none;
+}
+
+
+
+#contact {
+width: 100%;
+height:auto;
+margin-top: 10rem;
+}
+.contact-me{
+padding: 9em;
+}
+.contact-me h1{
+margin-top: 7rem;
+color: var(--color);
+}
+
+.paragraph-contact {
+  padding-right: 4em;
+  padding-left: 4em;
+  line-height: 3.5rem;
+  font-size: 2.4rem;
+  margin-bottom: 2em;
+  color: white;
+  opacity: 80%;
+  font: sans-serif;
+}
+.let-us-talk {
+  color: var(--color) !important;
+  background-color: transparent;
+  width:20rem;
+  border-color: transparent;
+  padding: 1.3rem;
+}
+.let-us-talk:hover {
+  border: 2px dashed var(--color);
+}
+.icons {
+  margin-top: 2rem;
+}
+.icons a svg {
+margin-right: 15px;
+margin-left: 15px;
+color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.navbar {
+  width: 100%;
+  display: flex;
+  background-color: linear-gradient(0.25turn, #3f87a6, #635985, #443C68);
+  border-bottom: 2px solid #16FF00;
+  position: sticky;
+  background:#191A19 ;
+}*/
+/*#main-content {
+padding: 2rem;
+overflow: hidden;
+background:#191A19 ;
+}
+#container {
+width: 100%;
+padding-left: 3rem;
+margin-left: 0px;
+}
+#collapsable-nav{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}*/
+/*.my-list {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  margin-right: 0.5rem;
+  font-size: 2rem;
+}
+button.navbar-toggle {
+  border:1px solid var(--color);
+  position: absolute;
+  right:15px;
+  top: 15px;
+}
+button > span{
+background-color: var(--color);
+}
+li {
+  margin-bottom: 10px; /* Adjust as needed 
+  padding: 2em;
+}*/
+
+/*li a {
+  display: block;
+  text-decoration: none;
+  font-family:var(--font-family);
+  color: var(--color);
+  font-weight: bold;
+}
+li a:hover {
+  color: var(--color);
+  text-decoration: none;
+	box-shadow: -10px -8px var(--color);
+  border: 2px solid var(--color);
+}*/
+/*.name {
+list-style-type: none;
+margin-right: 4em;
+margin-top: 1.9em;
+color: var(--color);
+text-decoration: none;
+font-family: var(--font-family);
+}*/
+
+/*.About-me {
+margin:4rem 2rem 2rem 4rem ;
+width: 100%;
+overflow: hidden;
+
+}
+.Issam {
+margin: 3rem 5rem;
+box-shadow: -60px -50px var(--color);
+opacity: 100%;
+--s :10 px;
+padding: var(--s);
+border: 3px solid var(--color);
+ overflow: hidden;
+}
+.presentation {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  margin:auto;
+  align-items: center;
+  justify-content: center;
+  line-height:auto;
+  text-align: center;
+  font-family: var(--font-family);
+}*/
+
+
+/*.presentation .text{
+   color: var(--color);
+   position: relative;
+   font-weight: bold;
+   font-size: 20px
+}
+.text.one {
+font-size:3.5rem ;
+font-weight: bold;
+margin-bottom: 1.5rem;
+}
+.text.two:before{
+content :"";
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+background-color:#191A19;
+border-left: 2px solid white;
+animation: animate 4s steps(20) infinite;
+}
+@keyframes animate {
+  40%,60% {
+    left: 100% ;
+  }
+  100% {
+    left: 5%;
+  }
+}
+.Issam-name {
+  margin: auto 3rem ;
+  height: 90px;
+  width :90px
+}
+#projects {
+  width: 100%;
+  height: 100vh;
+  background-color:transparent;
+  margin-top: 16rem;
+  display: flex;
+}*/
+/*#about {
+  width: 100%;
+  height: 100vh;
+  background-color:transparent;
+  margin-top: 16rem;
+}
+#about h1 {
+  margin:3rem;
+  color: var(--color);
+  text-align: center;
+  font-family: var(--font-family);
+}
+.paragraph {
+  width: 100%;
+  margin: 7rem 1rem;
+  color: var(--color);
+  font-family: var(--font-family);
+  display: flex;
+}
+section {
+  margin: auto;
+}
+.projects > div {
+width: 30%;
+height: 280px;
+background-color: var(--color);
+margin: 4rem auto;
+}*/
